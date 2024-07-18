@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: arial, Helvetica, snas-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="off"> <!--O autocomplete desliga o preenchimento automatico da minha página.-->
+
+        <h1>Meu primeiro formulário</h1>
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p> <!--Nos campos 'ID' eu carescentei o i para fazer a identificação do que é os ID. Eu envelopei o "Nome:" com a label para dentro do for da label eu colocar o"ID" com que eu desejo fazer a comunicação que no caso é o "ID" inome.-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>

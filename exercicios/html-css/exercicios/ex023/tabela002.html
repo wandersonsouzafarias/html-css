@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;/*Cola as bordas da minha tabela.*/
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot{/*Cabeça da minha tabela.*/
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:gray;
+        }
+
+        tbody > tr:nth-child(2n){/*Vai fazer que a cada duas linhas, vai colocar a cor abaixo. */
+            background-color: lightgray;
+        }
+
+        td.num{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION = É uma legenda da tabela. No Caption eu não posso colocar TR nem TD.
+            THEAD = CABEÇA
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+    -->
+    <table><!-- Criação da tabela-->
+        <caption>População das Unidades Federativas</caption><!--Legenda da minha tabela.-->
+        <thead><!-- Criação da cabeça da tabela-->
+            <tr>
+                <th scope="col">Estado</th><!--A tag <th> é para cabeçalho.-->
+                <th scope="col" style="width: 50px;">População</th>   
+            </tr>
+        </thead>
+
+        <tbody><!-- Criação do corpo da tabela-->
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td> class="num"Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 088 065</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">8 796 448</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td> class="num"Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td> class="num"Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td> class="num"Bahia</td>
+                <td class="num">14 016 906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10 444 526</td>
+            </tr>
+        </tbody>
+
+        <tfoot><!-- Criação do rodapé da tabela-->
+            <tr>
+                <th scope="row">Total da Habitantes</th><!--Server mais para títulos-->
+                <td class="num"><strong>200 007 654</strong></td><!--Server para informar dados.-->
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quas commodi ut animi ab. Praesentium inventore autem maiores animi consectetur doloribus illo! Architecto ratione quod pariatur quae voluptatum, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ex enim ratione. Temporibus et suscipit laborum sequi delectus, officiis alias iusto, assumenda non provident ut sint commodi veritatis consectetur incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi molestias a accusamus obcaecati quis odio blanditiis magni quaerat natus voluptatum. Qui doloremque nisi ex quae sequi velit. Magni, quas Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsa deleniti accusantium quia debitis sunt laboriosam amet distinctio? Dignissimos voluptatibus rem dicta possimus. Architecto officiis harum laboriosam facilis amet temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla excepturi labore nostrum exercitationem veritatis, odit doloremque. Non iure minus, ut temporibus reprehenderit natus necessitatibus earum dolor mollitia quae, numquam odit!Lorem
+    </p>
+</body>
+</html>

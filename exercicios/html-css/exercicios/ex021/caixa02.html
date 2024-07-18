@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgb(78, 76, 76);
+            padding: 3px;
+            box-shadow: 7px 7px 5px rgba(99, 96, 96, 0.493); /*Cria sombras nas caixas*/
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 32px 32px 32px 32px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: rgb(116, 115, 115);
+        }
+
+        footer{
+            background-color:black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 4px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+  </header>
+   <main>
+        <section id="assunto">
+            <p>Tecnologia Esporte Agricultura</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius asperiores delectus sit? Reprehenderit recusandae doloremque officia hic qui, maiores illum nostrum temporibus rem obcaecati, nam, dicta in atque totam.</p>
+                <aside>
+                    <p>Artigo escrito por Wanderson Souza de Farias</p>
+                </aside>
+            </article>
+            <article>
+                
+            </article>
+        </section>
+   </main>
+   <footer>
+    <p>Desenvolvido pela Corporação W.S.F</p>
+   </footer>
+   <div id="bola"></div>
+</body>
+</html>

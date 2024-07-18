@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #conteiner{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: relative;/*Esse contéudo de fora deve ter o postion relative logo o conteudo de dentro desse que é o article deve ter o position absolute.*/
+            height: 95vh;
+            padding: 10px;
+            background-color: rgb(111, 0, 255);
+        }
+        #conteudo{
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            position: absolute;/*Quando eu utilizo este absolute, ele me dá a capacidade de poder mexer com o left, top*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+        
+    </style>
+</head>
+<body>
+    <section id="conteiner">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

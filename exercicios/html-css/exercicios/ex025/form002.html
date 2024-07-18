@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--Criei um formulário atráves da tag form. O método action vai executar a ação de abrir o arquivo cadastro.php.-->
+        <p>
+            <label for="iusu">Usuário: </label> <!--Criei o campo da label com o for de iusu para ser chamado pelo campo ID do input.-->
+            <input type="text" name="usu" id="iusu" required minlenght="5" maxlenght="15" size="40"> <!--O método required faz com que seja obrigátorio o preenchimento do campo.-->
+        </p><!--O método size deixará o tamanho da caixa com nosso máximo 15 letras ou números-->
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required maxlength="8" size="25" placeholder="senha" autocomplete="current-password"> <!--O campo type recebe o valor como password que irá ser o campo de senha que exibe os caracteres escondidos.-->
+        </p><!--O required teve o auxilio do minlength que irá exigir o mínimo de 8 caracteres por campo. O placeholder dá a dica dentro do text box, do que deve ser inserido dentro do campo.-->
+        <p>
+            <input type="submit" value="Enviar"> <!--O type tem como parâmetro o submit que irá enviar uma informação. O campo value-->
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

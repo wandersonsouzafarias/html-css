@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {/*O símbolo indica que vai mexer somente no parágrafo dentro da div.*/
+            display: none;/*Estou dizendo que não é para mostrar nada dentro do parágrafo.*/
+        }
+
+        div:hover > p {/*Faz com que o parágrafo dentro da div apareça. Nesse exemplo eu estou mexendo exatamente com o paragrafo dentro da div.*/
+            display: block;/*Mostra o texto em oculto*/
+            color: white;
+            background-color: red;
+            width: 300px;/*largura do parágrafo*/
+        }
+
+        div:hover {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <p>Passe o mouse sobre o texto abaixo.</p>
+    <div>
+        Passe o mouse aqui!!
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+    <p>Fim do exemplo.</p>
+</body>
+</html>

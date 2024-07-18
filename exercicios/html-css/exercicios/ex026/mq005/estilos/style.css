@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* Versão Mobil First */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    background-color: lightgray;
+}
+
+header {
+    background-color: rgb(148, 148, 148);
+}
+
+span#burguer {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    display: block; /* O display block faz com que a minha cor de background color ocupe o espaço total da minha tela.*/
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* Transforma o meu curso em uma luvinha.*/
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: none; /* Enquanto o meu display for none ele  ira esconder o meu menu. TOP!!!*/
+}
+
+menu > ul {
+    list-style-type: none; /* Retira as bolinhas dos âncoras */
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none; /* Retira o sublinhados dos âncoras*/
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray; /* Cria um linha sobre os meus âncoras. */
+}
+
+menu > ul > li > a:hover {
+    background-color: gray; /* Cria um efeito de transição de cor quando eu passo o curso do mouse sobre o link.*/
+}
+
+main {
+    width: 90vw; /* Vai ocupar 90% da minha página.*/
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}

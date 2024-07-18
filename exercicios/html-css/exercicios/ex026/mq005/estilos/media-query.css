@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none; /*Faz com que meu menu humburguer desapareça quando a tela for maior ou igual 768px.*/
+    }
+
+    menu {
+        display: block; /* Vai exibir o menu normal quando a tela for maior ou igual a 768px. */
+    }
+
+    menu > ul > li {
+        display: inline-block; /* Vai fazer com que os meus menus apareçam um do lado do outro*/
+    }
+
+    main {
+        width: 768px; /* Coloquei um tamanho fixo no meu main mesmo quando ele ultapassar os 768pxs ele irá manter o tamanho estabelicido nas configurações./**/
+    }
+}
+

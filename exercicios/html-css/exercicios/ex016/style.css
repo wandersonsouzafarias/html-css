@@ -1,0 +1,32 @@
+@charset "UTF-8";/*Esse código é para caracteres especiais serem aceitos nesta página*/
+
+/*Cada parte especificadas do código são seletores da minha página principal para configurar, cada uma individualmente.*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   /* height: 100%;*//*altura da página*/
+}
+body{
+    background-image: linear-gradient(to right,#D9C7D1,#F2E9F2);/*minha cor de fundo, utilizando gradiente.*/
+}
+
+main{
+    border-radius: 20px;/*É utilizado para arredondar a ponta da minha página.*/
+    background-color: white;/*define a cor de fundo da parte do meu código que esta dentro do comando main no código principal.*/
+    width: 600px;/*Define a largura que eu desejo que ocupa o fundo da minha página.*/
+    padding: 10px;/*complementa o espaço da cor de fundo para todas as palavras ficarem ajustadas.*/
+    margin: auto;/*centraliza tudo o que estiver no meu plano de fundo, para o centro da tela.*/
+    box-shadow: 5px 5px 15px #474b48bd;/*Adicionar uma sombra ao fundo da minha página selecionada, que no caso é a minha página pricipal.*/
+}
+h1{
+    color: #A3ADA6;/*Definir a cor dos meus títulos h1.*/
+    text-align: center;/*Centraliza o meu título.*/
+    text-shadow: 1px 1px 2px #212422;
+}
+h2{
+    color:#8D8D9E;/*Definir a cor dos meus títulos h2.*/
+}
+
+p{
+    text-align: justify;/*Deixa alinhado o meu texto do parágrafo*/
+}
