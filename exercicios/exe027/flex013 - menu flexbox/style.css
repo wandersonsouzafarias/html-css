@@ -18,14 +18,37 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;/*Alinhou os itens no centro no mesmo sentido do que o h1.*/
 }
 
 header > h1 {
     border: 1px solid dotted black;
+    flex: 0 0 200px;/*o meu flex não vai crescer, ele não vai encolher e vai ficar fixo em 200px.*/
 }
 
 header > nav {
     border: 1px dotted black;
+    display: flex; /*Antes desse display flex as caixas dos ancoras não se encaixavam dentro da caixa do nav. Com ele se encaixou dentro perfeitamente.*/
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
 }
 
 main {
