@@ -26,12 +26,14 @@ header {
 }
 
 header > h1 {
-    border: 1px solid dotted black;
-    flex: 0 0 200px;/*o meu flex não vai crescer, ele não vai encolher e vai ficar fixo em 200px.*/
+    /* border; 1px dotted black;*/
+    flex: 0 0 220px;/*o meu flex não vai crescer, ele não vai encolher e vai ficar fixo em 200px.*/
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
 header > nav {
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+
     display: flex; /*Antes desse display flex as caixas dos ancoras não se encaixavam dentro da caixa do nav. Com ele se encaixou dentro perfeitamente.*/
     flex-flow: row wrap;
     justify-content: flex-end; /*Faz com que a quebra ocorra no final da página.*/
